@@ -3,7 +3,7 @@ import { useThree, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 
-// nameTarget : String
+
 export default function OrbitControlsFollowObject({nameFollowObject, nameLookAtObject, ...props}) {
 
     const { scene } = useThree();
@@ -48,6 +48,8 @@ export default function OrbitControlsFollowObject({nameFollowObject, nameLookAtO
 
     let newPosition = new THREE.Vector3(0,0,0)
     let prevPosition = new THREE.Vector3(newPosition.x,newPosition.y,newPosition.z)
+
+    console.log(orbitControl)
 
     useFrame(()=>{
 

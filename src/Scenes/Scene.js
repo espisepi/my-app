@@ -26,7 +26,7 @@ export default function Scene() {
                 </mesh>
             </Curve>
 
-            <OrbitControlsFollowObject nameFollowObject="mesh-curve-modifier"  />
+            <OrbitControlsFollowObject nameFollowObject="mesh-curve-modifier" minDistance={0} maxDistance={0.01}  />
 
         </Canvas>
     )
